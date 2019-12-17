@@ -137,6 +137,7 @@ syscall(void)
   int num;
   struct proc *curproc = myproc();
   num = curproc->tf->eax;
+  //check if read()
   if(num==5){
       counter++;
   }

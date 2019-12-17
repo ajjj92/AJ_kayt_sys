@@ -21,6 +21,8 @@ extern void forkret(void);
 extern void trapret(void);
 
 static void wakeup1(void *chan);
+
+//Get the amount read() has been called
 int counter=0;
 int
 sys_getreadcount()
